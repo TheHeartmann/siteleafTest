@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<head>
+		<title>{{site.title}} | {{title}}</title>
+	</head>
+
+	<body>
+
+		<h1>{{title}}</h1>
+
+		<article>{{body}}</article>
+
+		{% if parent %}
+		<p><a href="{{parent.url}}">&larr; Go back</a></p>
+		{% endif %}
+
+	</body>
+
+</html>
